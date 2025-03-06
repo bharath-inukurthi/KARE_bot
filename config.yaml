@@ -1,0 +1,14 @@
+allow_email_domain: '@klu.ac.in'
+cookie:
+  key: some_random_secure_key
+  name: faculty_meeting_auth
+credentials:
+  usernames:
+    99230040570@klu.ac.in:
+      email: 99230040570@klu.ac.in
+      name: bharath
+      password: '99230040570'
+    bharathinukurthi1:
+      email: bharathinukurthi1@gmail.com
+      name: Bharath Inukurthi
+      password: $2b$12$0kW5FOfeHMOaVKVMW6WnSe1SeywyD7jZ50rQj.kB0h9XZyoCr9Jhy
