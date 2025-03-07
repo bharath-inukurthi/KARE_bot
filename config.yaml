@@ -4,11 +4,23 @@ cookie:
   name: faculty_meeting_auth
 credentials:
   usernames:
+    99230040536@klu.ac.in:
+      email: 99230040536@klu.ac.in
+      name: Rahul
+      password: $2b$12$rsV6aMM1Ic1ISxK0G1OTRexwiaYqHI2uNaw6bASpKYUvuy0JvNnG2
+    99230040553@klu.ac.in:
+      email: 99230040553@klu.ac.in
+      name: laxman
+      password: $2b$12$9XfLzqGOK1g5FjARagSK4ukXwrLxq/faWMFkMHzUshhJO7RRF5vzq
+    99230040558@klu.ac.in:
+      email: 99230040558@klu.ac.in
+      name: praveen
+      password: $2b$12$XTKqYFcY1NSYcQpV62k0OOIqDPe65IeBljG1Ftgc2igi4oJ2x9bw2
     99230040570@klu.ac.in:
       email: 99230040570@klu.ac.in
       name: bharath
       password: '99230040570'
-    bharathinukurthi1:
+    bharathinukurthi1@gmail.com:
       email: bharathinukurthi1@gmail.com
       name: Bharath Inukurthi
       password: $2b$12$0kW5FOfeHMOaVKVMW6WnSe1SeywyD7jZ50rQj.kB0h9XZyoCr9Jhy

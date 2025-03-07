@@ -53,7 +53,7 @@ def login():
     if st.session_state["authentication_status"]:
         st.sidebar.empty()
         st.sidebar.title(f"Welcome {st.session_state['name']}")
-        if st.session_state['username'] != 'Bharath Inukurthi':
+        if st.session_state['username'] != 'bharathinukurthi1@gmail.com':
             pages = {"Chat Interface": chat_page}
         else:
             pages = {"Chat Interface": chat_page,"Upload Timetable":upload_page}
@@ -86,7 +86,15 @@ inverse_course_mapping={'Statistics for Engineers': 'Statis',
  'Excel Skills': 'EXSEL',
  'Machine Learning IC -': 'ML',
  'Digital Principles and System Design IC -': 'DPSD',
- 'University Elective': 'UE'}  # From notebook
+ 'University Elective': 'UE',
+"Pattern and Anomaly Detection": "PAD",
+    "Pattern and Anomaly Detection Lab": "PAD Lab",
+    "Computer Networks": "CN",
+    "Automata and Compiler Design": "ACD",
+    "Foundation on Innovation and Entrepreneurship": "FIE",
+    "Design Project II": "EXSEL",
+    "Secured Computing": "SC"
+ }  # From notebook
  # Full class implementation
 
 # Streamlit app structure

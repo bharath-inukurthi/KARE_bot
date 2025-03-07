@@ -34,13 +34,13 @@ class Data_extractor:
             for page in pdf.pages:
                 if self.compatibility(page):
                     
-                    class_details=self.get_coordinator(page)
+                    #class_details=self.get_coordinator(page)
                     courses_details=self.get_course_details(page)
                     schedule=self.get_schedule(page,courses_details)
                     i+=1
                     print(i)
-                    self.extracted.append({"class_details":class_details,
-                            "course_details":courses_details,
+                    self.extracted.append(#{"class_details":class_details,
+                            {"course_details":courses_details,
                             "schedule":schedule})
         return self.extracted
     def extract_course_room(self,cell):
@@ -207,7 +207,7 @@ class TimeTableProcessor:
         return time_table_db
     
     def process_all(self):
-        section_db = self.create_section_db()
+        #section_db = self.create_section_db()
         subject_db = self.create_subject_db()
         faculty_db = self.create_faculty_db()
         faculty_subject_db = self.create_faculty_subject_db(faculty_db)
@@ -217,7 +217,7 @@ class TimeTableProcessor:
         time_table_db = self.create_time_table_db(faculty_subject_db, room_db, slots_db, days_db)
         
         return {
-            "section_db": section_db,
+            #"section_db": section_db,
             "subject_db": subject_db,
             "faculty_db": faculty_db,
             "faculty_subject_db": faculty_subject_db,
@@ -288,15 +288,7 @@ def RAG(input_query):
 
     The sentence must be concise, grammatically correct, and easy to understand.
     Convert 24-hour time format to 12-hour AM/PM format.
-
-    Determine the correct day expression:
-
-    Fetch the current weekday automatically.
-    If the given day matches today’s weekday, replace it with "today".
-    If the given day is tomorrow, replace it with "tomorrow".
-    If the given day is two days ahead, replace it with "day after tomorrow".
-    if iyou recieve a empty set ansewr with "the faculty you are searching is not free on given time"
-    Otherwise, keep the weekday name.
+                                                               
     Combine multiple entries based on the following cases:
 
     Same day, same room:
@@ -317,7 +309,13 @@ def RAG(input_query):
     """,inputs=[])
     out_chat_template=HumanMessagePromptTemplate.from_template("""
     dont give any other extra contents just give output alone
-
+    Determine the correct day expression:                                        
+    Fetch the current weekday automatically.
+    If the given day matches today’s weekday, replace it with "today".
+    If the given day is tomorrow, replace it with "tomorrow".
+    If the given day is two days ahead, replace it with "day after tomorrow".
+    if you recieve a empty set ansewr with "the faculty you are searching is not free on given time"
+    Otherwise, keep the weekday name.
 
     here is the data
     {response}
