@@ -314,7 +314,7 @@ def RAG(input_query):
     If the given day matches today’s weekday, replace it with "today".
     If the given day is tomorrow, replace it with "tomorrow".
     If the given day is two days ahead, replace it with "day after tomorrow".
-    if you recieve a empty set ansewr with "the faculty you are searching is not free on given time"
+    if you recieve a empty set ansewr with "the faculty is free and He/She will be available in his cabin"
     Otherwise, keep the weekday name.
 
     here is the data

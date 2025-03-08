@@ -20,6 +20,10 @@ credentials:
       email: 99230040570@klu.ac.in
       name: bharath
       password: '99230040570'
+    99230041168@klu.ac.in:
+      email: 99230041168@klu.ac.in
+      name: vijayashekar
+      password: $2b$12$E9BuGRv.VcbIGl2b2tNE4e6M3D82F8rWflEEFgk2DAutqfht2s2F.
     bharathinukurthi1@gmail.com:
       email: bharathinukurthi1@gmail.com
       name: Bharath Inukurthi
