@@ -29,7 +29,7 @@ Only faculty can upload timetables (admin access), while students (with `@klu.ac
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/KARE_bot.git
+   git clone https://github.com/bharath-inukurthi/KARE_bot.git
    cd KARE_bot
    ```
 
@@ -82,7 +82,6 @@ Only faculty can upload timetables (admin access), while students (with `@klu.ac
 
 ### 🔐 Admin Access
 
-- **Login using:** `bharathinukurthi1@gmail.com`
 - **Upload Timetables:** Navigate to the "Upload Timetable" section
 - **Supported Format:** Only well-formatted PDFs
 
