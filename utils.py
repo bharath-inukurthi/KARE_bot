@@ -274,8 +274,8 @@ def RAG(input_query):
         example_prompt=example_prompt,
     )
     final_prompt=ChatPromptTemplate.from_messages([sys_template,few_shots,user_template])    
-    llm = GoogleGenerativeAI(model="gemini-2.0-pro-exp-02-05",temperature=0.2,google_api_key="AIzaSyDlUs4YfBhwthPE6Dn32JzM8GZLZFoqork")
-    DATABASE_URL = "mysql+pymysql://root:99230040570@localhost/faculty_meet"
+    llm = GoogleGenerativeAI(model="gemini-2.0-pro-exp-02-05",temperature=0.2,google_api_key="your_api_key")
+    DATABASE_URL = "your_data_base_url"
     db = SQLDatabase.from_uri(DATABASE_URL)
     input_mapping=RunnableLambda(lambda x:{"input":  x,
         "table_info":db.table_info})
