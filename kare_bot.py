@@ -69,14 +69,9 @@ def login():
         st.warning("Please enter your credentials")
     
 
-USERNAME = "root"   # Replace with your MySQL username
-PASSWORD = "99230040570"   # Replace with your MySQL password
-HOST = "localhost"           # Change if the database is hosted remotely
-PORT = "3306"                # Default MySQL port
-DATABASE = "faculty_meet"   # Replace with your database name
 
 # Create SQLAlchemy Engine
-engine = create_engine(f"mysql+pymysql://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}")
+engine = create_engine("your_database_url")
 
 # Course mapping and processing classes
 inverse_course_mapping={'Statistics for Engineers': 'Statis',
